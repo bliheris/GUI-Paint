@@ -1,0 +1,138 @@
+#colorSelection {
+    background: #fff;
+    height: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 0 0 #222;
+}
+
+#colorSelection ul {
+    list-style:none;
+    margin: 0;
+    float: 	left;
+    padding: 10px 0 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#colorSelection li {
+    display: inline-block;
+    margin: 0 5px 10px;
+    height: 54px;
+    width: 54px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 60px;
+}
+
+#colorSelection .white {
+    background: #ffffff;
+    border: 2px solid #000;
+}
+
+.black {
+    background: #000;
+}
+.red {
+    background: #fc4c4f;
+}
+.orange {
+    background: #FF7F00;
+}
+.yellow {
+    background: #FFFF00;
+}
+.chartreuseGreen {
+    background: #7FFF00;
+}
+.green {
+    background: #00FF00;
+}
+.springGreen {
+    background: #00FF7F;
+}
+.cyan {
+    background: #00FFFF;
+}
+.azure {
+    background: #007FFF;
+}
+.blue {
+    background: #0000FF;
+}
+.violet {
+    background: #7F00FF;
+}
+.magenta {
+    background: #FF00FF;
+}
+.rose {
+    background: #FF007F;
+}
+
+
+
+
+
+#drawingColors {
+    background: #fff;
+    height: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 0 0 #222;
+}
+
+#drawingColors ul {
+    list-style:none;
+    margin: 0;
+    float: 	left;
+    padding: 10px 0 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#drawingColors li {
+    display: inline-block;
+    margin: 0 5px 10px;
+    height: 54px;
+    width: 54px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 60px;
+}
+
+#drawingColors .strokeColor {
+    background: #000;
+}
+#drawingColors .fillColor {
+    background: #fff;
+    border: 2px solid #000;
+}
+
+#drawingColors .selected {
+    border: 4px solid #00f;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:active {
+    text-decoration: none;
+    color: #000000;
+}

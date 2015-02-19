@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paint</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/colorSelection.css" rel="stylesheet">
+    <link href="css/toolSelection.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <div class="row" style="height: 20px"></div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-4">
+
+            <button onclick="MENU.openFile();" type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-folder-open"></span>
+                Open File
+            </button>
+
+
+            <button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-floppy-disk"></span>
+                <a id="download" download="image.png">Save File</a>
+            </button>
+
+            <button onclick="javascript:cUndo();return false;" type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-arrow-left"></span>
+                Undo
+            </button>
+
+            <button onclick="javascript:cRedo();return false;" type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-arrow-right"></span>
+                Redo
+            </button>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <!--<div class="col-md-2"></div>-->
+        <div class="col-md-2" id="drawingColors">
+            <ul>
+                <li id="strokeC" class="strokeColor selected"></li>
+                <li id="fillC"class="fillColor"></li>
+            </ul>
+        </div>
+        <div class="col-md-10" id="colorSelection">
+            <ul>
+                <li class="white"></li>
+                <li class="black"></li>
+                <li class="red"></li>
+                <li class="orange"></li>
+                <li class="yellow"></li>
+                <li class="chartreuseGreen"></li>
+                <li class="green"></li>
+                <li class="springGreen"></li>
+                <li class="cyan"></li>
+                <li class="azure"></li>
+                <li class="blue"></li>
+                <li class="violet"></li>
+                <li class="magenta"></li>
+                <li class="rose"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2" id="toolSelection">
+            <div><ul>
+                <li id="freeDrawTool">
+                    <img src="img/pencil_64.png" alt="Draw free">
+                </li>
+                <li id="drawLine">
+                    <img src="img/line_bold_64.png" alt="Draw line icon">
+                </li>
+                <li id="drawCirlce">
+                    <img src="img/circle_bold_64.png" alt="Draw cirlce icon">
+                </li>
+                <li id="drawRectangle">
+                    <img src="img/square_bold_64.png" alt="Draw rectangle icon">
+                </li>
+                <li id="eraser">
+                    <img src="img/eraser_64.png" alt="Use eraser icon">
+                </li>
+                <li id="text">
+                    <img src="img/letter_64.png" alt="Insert text icon">
+                </li>
+            </ul></div>
+
+            <div>
+                Line width:
+                <select id="selWidth">
+                    <option value="1">1</option>
+                    <option value="3" selected="selected">3</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                    <option value="9">9</option>
+                    <option value="11">11</option>
+                </select>
+                </br>
+                Fill style:
+                <select id="selectFill">
+                    <option value="1" selected="selected">No fill</option>
+                    <option value="2">Solid</option>
+                </select>
+                </br>
+                Font:
+                <select id="fontSelect">
+                    <option value="Arial" selected="selected">Arial</option>
+                    <option value="Imapct">Imapct</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+
+                </select>
+                </br>
+                Font size:
+                <select id="fontSizeSelect">
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="20" selected="selected">20</option>
+                    <option value="24">24</option>
+                    <option value="30">30</option>
+                    <option value="36">36</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="col-md-10">
+            <canvas id="canvas"	width="800" height="600"></canvas>
+        </div>
+    </div>
+
+</div>
+<div id="hiddenFileOpener" style="display:none;"></div>
+
+<script src="js/lib/jquery-2.1.1.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/canvasHelper.js"></script>
+<script src="js/colorSelection.js"></script>
+<script src="js/toolSelection.js"></script>
+<script src="js/saveFile.js"></script>
+<script src="js/undoredo.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

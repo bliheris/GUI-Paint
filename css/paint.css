@@ -1,0 +1,29 @@
+body {
+    background: #dddddd;
+}
+
+#iconCanvas {
+    background: #eeeeef;
+    cursor: pointer;
+    border: thin solid #aaaaaa;
+
+    box-shadow: rgba(0,0,0,0.5) 2px 2px 4px;
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#drawingCanvas {
+    background: #ffffff;
+    cursor: crosshair;
+    border: thin solid #aaaaaa;
+    margin-left: 8px;
+
+    box-shadow: rgba(0,0,0,0.5) 2px 2px 4px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
